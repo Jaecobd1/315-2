@@ -97,8 +97,44 @@ a {
     padding: 20px;
 }
 
+.button-holder {
+    display: flex;
+    margin: 10px;
+}
+
+.button {
+    background-color: orangered;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 128px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view {
+    position: absolute;
+    display: none;
+}
+
+.image:hover .view {
+    display: flex;
+}
+
 .item {
-    margin-top: 20px;
+    margin: 20px;
+}
+
+.image-text {
     display: flex;
 }
 
@@ -112,5 +148,8 @@ a {
         opacity: 0;
         flex-direction: column;
         /* transition: height 0.4s ease-in; */
+    }
+    .view {
+        display: flex;
     }
 }
